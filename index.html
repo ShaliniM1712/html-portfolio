@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5e6c77e5dc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="background">
+        <div class="one">
+            
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+               
+            </nav>
+            <div class="home-text">
+                <h1>Hi , Myself <span>DASARI SHALINI MADHURI</span><br> From Hyderabad.</h1>
+                <p> I am currently undergraduate student at<BR> Visvesvaraya National Institute Of Technology,Nagpur</p>
+
+
+            </div>
+    </div>
+</div>
+
+<!--------------------------about---------->
+<div id="about">
+    <div class="about-me">
+        <div class="row">
+            <div class="me">
+                <img src="./me.jpeg">
+            </div>
+                <div class="about-me-text">
+                    <h1 class="about-text">ABOUT ME</h1>
+                    <P>Myself DASARI SHALINI MADHURI,from Hyderabad,Telangana<br>
+                        curruntly a third year undergraduate student at<br>
+                         Visvesvaraya National Institute of Technology</P>
+
+                    <p> My objectiveis   to work in a learning and challenging environment .<br>
+                    Seeking a position in where I can gain experience <br>
+                     and work towards building a strong skill set.<br>
+                      A hard working individual looking for a challenging position<br>
+                       where I can showcase my skills and contribute to the growth of the organization</p>
+                       <div class="button-container">
+                        <button class="btn" onclick="window.open('./CV RESUME 26 June.pdf')"
+                            >DOWNLOAD CV
+                        </button>
+                       
+
+                       
+                      
+                    </div>
+                </div>   
+            
+        </div>
+    </div>
+</div>
+<!--------------           projects---------->
+
+<div id="projects">
+    <div class="my-projects">
+        <h1 class="about-me-text">MY PROJECTS</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="./motion sensor light switch.jpg">
+                <div class="layer">
+                    <h3>MOTION SENSOR LIGHT switch </h3>
+                   <P>Nowadays, energy consumption is large in residential and business areas. it's due to the inefficient 
+                    usage of electrical loads like heating systems, lighting systems etc. Among these, the lighting system is one in 
+                    all the biggest energy overwhelming units of any building & structure. it's thus crucial to use the good and 
+                    efficient lighting system by automatically switch on/off the lights when required without troubling the 
+                    conventional operation of the working atmosphere</P>
+                    <a href="./motion sensor light switch.pdf"><i class="fa-solid fa-download"></i></i></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./password.jpg">
+                <div class="layer">
+                    <h3> PASSWORD BASED DOORLOCK SECURITY SYSTEM </h3>
+                   <P>:The “Password Security System” project will give individuals AN opportunity to become familiar
+                    with using NOR and XOR logic gates within a circuit, whenever a password in the “enter” switch is pressed in – the light will become either red if the 
+                    password is incorrect or green if the password is correct</P>
+                    <a href="./password.pdf"><i class="fa-solid fa-download"></i></i></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./tank-over-flow-indicator.jpg">
+                <div class="layer">
+                    <h3> TANK OVER FLOW ALARM </h3>
+                   <P>a simple solution to prevent the wastage of water from overhead tank. It gives an audio visual
+                    indication when the water level rises towards the top of the tank so that the water pump can be switched off 
+                    to prevent the overflow. This is also an ideal circuit to monitor the water tank with float valve operation</P>
+                    <a href="./GROUP.pdf"><i class="fa-solid fa-download"></i></i></i></a>
+                </div>
+                
+            </div>
+            <div class="project">
+                <img src="./Electronic-Eye-Controlled-Security-System-using-LDR-Circuit-Diagram.jpg">
+                <div class="layer">
+                    <h3>  ELECTRONIC EYE </h3>
+                   <P>As the automation is emerging technology these days ,An electronic eye rings the a door bell 
+                    automatically when a person visit your home.The main principle of the circuit is to ring the door bell
+                    there any person at the entrance. Light on the LDR determines whether a person is present or not. Then
+                    there is any object at the entrance, LDR is in dark and buzzer starts ringing and the led starts glowing.
+                   </P>
+                    <a href="./EDC project.pdf"><i class="fa-solid fa-download"></i></i></i></a>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+<!----------------------contact-->
+<div id="contact">
+    <div class="contact-me">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="about-me-text">CONTACT ME</h1>
+                <P></P><i class="fa-sharp fa-solid fa-paper-plane"></i> dasarishalinimadhuri@gmail.com</P>
+               
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> <input type="text " name="name" placeholder="your name">
+                    <input type="email" name="email" placeholder="your name">
+                    <textarea name="message" rows="6" placeholder="your message"></textarea>
+                    <button class="button btn" type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu()
+    {
+        sidemenu.style.left="0"  
+    }
+    function closemenu()
+    {
+        sidemenu.style.left="-200px"  
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbztrad45VVjD7xONVud2h4QegwvhzGY2F4VIIBqC75P71WeCdwgP5uYqQshl7Ik-AkE/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    
+</body>
+</html>
