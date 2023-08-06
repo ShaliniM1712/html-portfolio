@@ -114,6 +114,7 @@ span,h3{
 .about-me-text{
     flex-basis: 60%;
     padding-top: 60px;
+     padding-bottom: 60px;
 }
 
 .about-text{
